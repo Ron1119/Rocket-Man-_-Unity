@@ -8,10 +8,12 @@ public class Rocket : MonoBehaviour
 
 
     Rigidbody rigidBody;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,15 @@ public class Rocket : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))  // keyCode is a enum of key buttons
         {
             rigidBody.AddRelativeForce(Vector3.up);  // relati
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+
+        }
+        else
+        {
+            audioSource.Stop();
         }
 
         if (Input.GetKey(KeyCode.A))

@@ -8,6 +8,7 @@ public class Rocket : MonoBehaviour
 
     [SerializeField] float rcsThrust = 200f;  // SerializeField value can be modified from inspector
     [SerializeField] float mainThrust = 200f;
+    [SerializeField] float brakeControl = 50f; 
     Rigidbody rigidBody;
     AudioSource audioSource;
     // Start is called before the first frame update
@@ -23,7 +24,10 @@ public class Rocket : MonoBehaviour
         Thrust();
 
         Rotate();
+        Brake();
     }
+
+   
 
     void OnCollisionEnter(Collision collision)
     {
@@ -46,20 +50,20 @@ public class Rocket : MonoBehaviour
     private void Thrust()
     {
         float thrustThisFrame = mainThrust * Time.deltaTime;  // to adjust the degree
-        if (Input.GetKey(KeyCode.Space))  // keyCode is a enum of key buttons
+        if (Input.GetKey(KeyCode.W))  // keyCode is a enum of key buttons
         {
             rigidBody.AddRelativeForce(Vector3.up * thrustThisFrame);  // relati
             if (!audioSource.isPlaying)
             {
                 audioSource.Play();
-                rigidBody.freezeRotation = true; // resume rotation
+               // rigidBody.freezeRotation = true; // resume rotation
             }
 
         }
         else
         {
             audioSource.Stop();
-            rigidBody.freezeRotation = false; // used to take control of rotation
+            //rigidBody.freezeRotation = false; // used to take control of rotation
         }
     }
     private void Rotate()
@@ -67,6 +71,7 @@ public class Rocket : MonoBehaviour
 
         
         float rotationThisFrame = rcsThrust * Time.deltaTime;
+        rigidBody.freezeRotation = true; // resume rotation
         if (Input.GetKey(KeyCode.A))
         {
             
@@ -77,7 +82,18 @@ public class Rocket : MonoBehaviour
         {
             transform.Rotate(-Vector3.forward * rotationThisFrame);
         }
-        
+        rigidBody.freezeRotation = false; // used to take control of rotation
+    }
+    private void Brake()
+    {
+        float brakeThisFrame = brakeControl * Time.deltaTime;
+        if (Input.GetKey(KeyCode.S))
+        {
+
+            rigidBody.AddRelativeForce(-Vector3.up * brakeThisFrame); ;
+
+        }
+       
     }
 
 

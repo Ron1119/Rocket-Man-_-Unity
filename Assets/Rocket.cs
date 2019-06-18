@@ -12,7 +12,18 @@ public class Rocket : MonoBehaviour
 
     [SerializeField] float rcsThrust = 200f;  // SerializeField value can be modified from inspector
     [SerializeField] float mainThrust = 200f;
-    [SerializeField] float brakeControl = 50f; 
+    [SerializeField] float brakeControl = 50f;
+
+    [SerializeField] AudioClip mainEngine;
+    [SerializeField] AudioClip explosionSound;
+    [SerializeField] AudioClip successSound;
+
+    [SerializeField] ParticleSystem mainEngineParticles;
+    [SerializeField] ParticleSystem explosionParticles;
+    [SerializeField] ParticleSystem successParticles;
+
+
+
     Rigidbody rigidBody;
     AudioSource audioSource;
     // Start is called before the first frame update
@@ -27,18 +38,20 @@ public class Rocket : MonoBehaviour
     {
         if (state == State.alive)
         {
-            Thrust();
+            RespondToThrust();
 
-            Rotate();
+            RespondToRotate();
             Brake();
         }
+        
+              
     }
 
    
 
     void OnCollisionEnter(Collision collision)
     {
-        if (state != State.alive) { return; }
+        if (state != State.alive) { return; }  // avoid keep generating sound when dying
         switch (collision.gameObject.tag)
         {
             case "Friendly":
@@ -50,18 +63,36 @@ public class Rocket : MonoBehaviour
             // print("Fuel");// remove later
             // break;
             case "Finish":
-                print("Next Level");
-                state = State.transcending;
-               Invoke("LoadNextLevel", 1f) ;
+                StartFinishSequence();
 
                 break;
             default:
-                print("dead");
-                state = State.dying;
-                // kill player
-                Invoke("LoadInitialScene", 1f);
+                StartDeathSequence();
                 break;
         }
+    }
+
+   
+
+    private void StartFinishSequence()
+    {
+        print("Next Level");
+        state = State.transcending;
+        audioSource.Stop();  // stop thrust sound when new sound is to appear
+        audioSource.PlayOneShot(successSound);  // playoneshot for just play one short time
+        successParticles.Play();
+
+        Invoke("LoadNextLevel", 1f);
+    }
+    private void StartDeathSequence()
+    {
+        print("dead");
+        state = State.dying;
+        audioSource.Stop();
+        audioSource.PlayOneShot(explosionSound);
+        explosionParticles.Play();
+        // kill player
+        Invoke("LoadInitialScene", 1f);
     }
 
     private void LoadNextLevel()
@@ -72,28 +103,37 @@ public class Rocket : MonoBehaviour
     private void LoadInitialScene()
     {
         SceneManager.LoadScene(0);
+
     }
 
-    private void Thrust()
+    private void RespondToThrust()
     {
         float thrustThisFrame = mainThrust * Time.deltaTime;  // to adjust the degree
         if (Input.GetKey(KeyCode.W))  // keyCode is a enum of key buttons
         {
-            rigidBody.AddRelativeForce(Vector3.up * thrustThisFrame);  // relati
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-               // rigidBody.freezeRotation = true; // resume rotation
-            }
+            ApplyThrust(thrustThisFrame);
 
         }
         else
         {
             audioSource.Stop();
+            mainEngineParticles.Stop();
             //rigidBody.freezeRotation = false; // used to take control of rotation
         }
     }
-    private void Rotate()
+
+    private void ApplyThrust(float thrustThisFrame)
+    {
+        rigidBody.AddRelativeForce(Vector3.up * thrustThisFrame);  // relati
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainEngine);
+            // rigidBody.freezeRotation = true; // resume rotation
+        }
+        mainEngineParticles.Play();
+    }
+
+    private void RespondToRotate()
     {
 
         

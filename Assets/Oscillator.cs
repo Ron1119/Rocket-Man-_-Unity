@@ -9,7 +9,7 @@ public class Oscillator : MonoBehaviour
 
     [SerializeField] Vector3 movementVector = new Vector3 (20f, 0f, 0f);
 
-    [SerializeField] float period = 2f;
+    [SerializeField] float period = 1f;
     float movementFactor;
 
     Vector3 startPos;
@@ -23,6 +23,7 @@ public class Oscillator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (period <= Mathf.Epsilon) { return; }
         float cycles = Time.time / period;
         const float tau = Mathf.PI * 2;
         float rawSinWave = Mathf.Sin(cycles * tau); // -1 to 1

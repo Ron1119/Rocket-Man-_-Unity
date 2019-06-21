@@ -26,6 +26,7 @@ public class Rocket : MonoBehaviour
     int currentScene ;
     int numberScene ;
     int nextScene;
+    bool collisionDisabled = false;
 
     Rigidbody rigidBody;
     AudioSource audioSource;
@@ -45,17 +46,7 @@ public class Rocket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        // debug code
-
-        if (Input.GetKey(KeyCode.C))  
-        {
-            StartFinishSequence();
-
-        }
-        else if (Input.GetKey(KeyCode.X))
-        { StartDeathSequence(); }  // to delete later 
-
+        
 
         if (state == State.alive)
         {
@@ -64,15 +55,32 @@ public class Rocket : MonoBehaviour
             RespondToRotate();
             Brake();
         }
+        if(Debug.isDebugBuild)  // via turing on the "development build key" in platform build  window to enable the "Debug.isDebugBuild"
+        {
+            RespondToDebug();   
+        }
         
-              
+
     }
 
-   
+    private void RespondToDebug()
+    {
+        // debug code
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            StartFinishSequence();
+
+        }
+        else if (Input.GetKeyDown(KeyCode.B))
+        {
+            collisionDisabled = !collisionDisabled; }  // toggle  the disable key;if don't press , it will remain last state
+    }
+
 
     void OnCollisionEnter(Collision collision)
     {
-        if (state != State.alive) { return; }  // avoid keep generating sound when dying
+        if (state != State.alive || collisionDisabled) { return; }  // avoid keep generating sound when dying
         switch (collision.gameObject.tag)
         {
             case "Friendly":

@@ -133,11 +133,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -208,6 +203,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 17.97125
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -227,16 +227,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle(1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -307,6 +297,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 11.821283
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle(1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -333,11 +333,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -408,6 +403,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 9.31555
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -445,16 +445,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Fuel
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -525,6 +515,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 15.763936
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Fuel
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -562,16 +562,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -642,6 +632,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.3364882
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -705,11 +705,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -780,6 +775,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 16.565655
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -799,11 +799,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -874,6 +869,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 19.528961
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -893,16 +893,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Landing Pad
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Finish
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -972,6 +962,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Landing Pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
@@ -1084,11 +1084,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1159,6 +1154,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 16.565655
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -1178,11 +1178,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1253,6 +1248,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 25.26375
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -1284,16 +1284,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1364,6 +1354,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 14.7155285
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -1389,16 +1389,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1469,6 +1459,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.3364882
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -1487,26 +1487,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 978961462}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1504131556 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1909118622}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1504131557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504131556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0189dbd8ca1957946bee538bb40ba15b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementVector: {x: 20, y: 0, z: 0}
-  period: 2
 --- !u!1001 &1676773257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1514,11 +1494,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1589,6 +1564,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 23.789936
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -1614,11 +1594,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: moveobstacle
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1674,6 +1649,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.332
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: moveobstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6bf92e1d53563e44a32e5d947b41bb5, type: 3}
 --- !u!4 &1911321459 stripped
@@ -1695,16 +1675,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766858570}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstacle (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1775,6 +1745,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 10.898219
       objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Obstacle (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_Enabled
@@ -1794,11 +1774,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1133698586357492969, guid: c15508aa3d291ce4997acb276342c3ec,
-        type: 3}
-      propertyPath: m_Name
-      value: Rocket
-      objectReference: {fileID: 0}
     - target: {fileID: 1133698586357492971, guid: c15508aa3d291ce4997acb276342c3ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1853,6 +1828,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133698586357492969, guid: c15508aa3d291ce4997acb276342c3ec,
+        type: 3}
+      propertyPath: m_Name
+      value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133698586357492970, guid: c15508aa3d291ce4997acb276342c3ec,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8412322319758438302, guid: c15508aa3d291ce4997acb276342c3ec,
         type: 3}
@@ -2017,16 +2002,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_Name
-      value: launch pad
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Friendly
-      objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860288, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2096,6 +2071,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.976323
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_Name
+      value: launch pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237947839327860292, guid: d6bf92e1d53563e44a32e5d947b41bb5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Friendly
       objectReference: {fileID: 0}
     - target: {fileID: 5237947839327860294, guid: d6bf92e1d53563e44a32e5d947b41bb5,
         type: 3}
@@ -2200,11 +2185,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6240827864255877140, guid: c3f094d0294231042af531b59d2c9971,
-        type: 3}
-      propertyPath: m_Name
-      value: Directional Light
-      objectReference: {fileID: 0}
     - target: {fileID: 6240827864255877143, guid: c3f094d0294231042af531b59d2c9971,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
@@ -2224,6 +2204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240827864255877140, guid: c3f094d0294231042af531b59d2c9971,
+        type: 3}
+      propertyPath: m_Name
+      value: Directional Light
       objectReference: {fileID: 0}
     - target: {fileID: 6240827864255877142, guid: c3f094d0294231042af531b59d2c9971,
         type: 3}

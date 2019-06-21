@@ -5,8 +5,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Rocket : MonoBehaviour
 {
-
-
+  
+    
     enum State { alive, dying, transcending};
     State state = State.alive;
 
@@ -23,20 +23,40 @@ public class Rocket : MonoBehaviour
     [SerializeField] ParticleSystem explosionParticles;
     [SerializeField] ParticleSystem successParticles;
 
-
+    int currentScene ;
+    int numberScene ;
+    int nextScene;
 
     Rigidbody rigidBody;
     AudioSource audioSource;
+    
     // Start is called before the first frame update
     void Start()
     {
+        
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+        //
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+        numberScene = SceneManager.sceneCountInBuildSettings;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        // debug code
+
+        if (Input.GetKey(KeyCode.C))  
+        {
+            StartFinishSequence();
+
+        }
+        else if (Input.GetKey(KeyCode.X))
+        { StartDeathSequence(); }  // to delete later 
+
+
         if (state == State.alive)
         {
             RespondToThrust();
@@ -93,17 +113,32 @@ public class Rocket : MonoBehaviour
         audioSource.PlayOneShot(explosionSound);
         explosionParticles.Play();
         // kill player
-        Invoke("LoadInitialScene", leveldelay);
+        Invoke("LoadPreScene", leveldelay);
     }
 
     private void LoadNextLevel()
     {
-        SceneManager.LoadScene(1);
+
+
+        if (currentScene < numberScene-1) //SceneManager.sceneCountInBuildSettings
+        {
+            nextScene = currentScene + 1;
+        }
+        else 
+            { nextScene = 0; }
+        
+        SceneManager.LoadScene(nextScene);// Todo: put i as current scene number, and i+1 to next ,i-1 to previous one.
     }
 
-    private void LoadInitialScene()
+    private void LoadPreScene()
     {
-        SceneManager.LoadScene(0);
+        if (currentScene > 0)
+        {
+            nextScene = currentScene - 1;
+        }
+        else { nextScene = 0; }
+        
+        SceneManager.LoadScene(nextScene); // todo: default scene should be 0, maximum should be defined
 
     }
 

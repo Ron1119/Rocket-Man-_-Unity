@@ -140,13 +140,13 @@ public class Rocket : MonoBehaviour
 
     private void LoadPreScene()
     {
-        if (currentScene > 0)
+        /* if (currentScene > 0)
         {
             nextScene = currentScene - 1;
         }
-        else { nextScene = 0; }
+        else { nextScene = 0; } */
         
-        SceneManager.LoadScene(nextScene); // todo: default scene should be 0, maximum should be defined
+        SceneManager.LoadScene(currentScene); // todo: default scene should be 0, maximum should be defined
 
     }
 
